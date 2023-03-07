@@ -1,8 +1,12 @@
-#!/bin/bash
-if [ ! -d "demos/facemesh/code/venv" ]; then
-  python3 -m venv demos/facemesh/code/venv
-fi
-source demos/facemesh/code/venv/bin/activate
-python3 -m pip install -r requirements.txt
-python3 demo.py -e -xyz -3 world 
-printf "demo started"
+# #!/bin/bash
+# if [ ! -d "demos/facemesh/code/venv" ]; then
+#   python3 -m venv demos/facemesh/code/venv
+# fi
+# source demos/facemesh/code/venv/bin/activate
+# python3 -m pip install -r demos/depthai_blazepost/requirements.txt
+python3 demos/depthai_blazepose/demo.py -e -xyz -3 world  
+# > /dev/null 2> /dev/null &
+# echo $! > demos/depthai_blazepose/.pid
+printf "depthai blazepose demo started"
+# printf "blazepose demo starting in external window"
+
